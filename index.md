@@ -1,6 +1,16 @@
+<h1> My Knitting Meme </h1>
+  
 This is my knitting meme. I made it because I enjoy the galaxy brain meme format and I'm sad that there aren't that many knitting memes out there. Its height is screwy because I couldn't figure out how to fix that in R but the energy is there. 
 
-# This is the code I used to create it: 
+<h3>These are the reasons I made it: </h3>
+<ul>
+  <li>I enjoy knitting and I'm sad there aren't very many knitting memes </li>
+  <li>It taught me about how to create, manipulate and combine images in R </li>
+  <li>I like the galaxy brain meme format and I think the images I found are cool </li>
+  <li>My lecturer is cool and gives us fun assignments so we can actually focus on them (hi Anna!) </li>
+  </ul>
+
+<h3>This is the code I used to create it: </h3>
 
 *Creating and naming the text images:* 
 
