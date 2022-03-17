@@ -8,9 +8,10 @@ This is my knitting meme. <b>Enjoy!</b>
 <ul>
   <li>I enjoy knitting and I'm sad there aren't very many knitting memes </li>
   <li>It taught me about how to create, manipulate and combine images in R </li>
-  <li>I like the galaxy brain meme format and I think the images I found are cool </li>
+  <li>When I was searching <a href="https://knowyourmeme.com/memes/">the Know Your Meme website</a> for inspiration, I saw the galaxy brain meme format and thought it was cool </li>
   <li>My lecturer is cool and gives us fun assignments so we can actually focus on them (hi Anna!) </li>
   <li>It's original, since knitting memes are usually old-fashioned and don't use fun meme formats like this one </li>
+
   </ul>
 
 <h3> Here are some examples of typical knitting memes </h3> 
