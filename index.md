@@ -1,9 +1,8 @@
 <h1> My Knitting Meme </h1>
   
-This is my knitting meme. I made it because I enjoy the galaxy brain meme format and I'm sad that there aren't that many knitting memes out there. Its height is screwy because I couldn't figure out how to fix that in R but the energy is there. 
+This is my knitting meme. <b>Enjoy!</b> 
 
-![knitting_meme](https://user-images.githubusercontent.com/100880136/158886493-8bfd7fa9-f743-429f-af8d-e997a1111254.png)
-
+<img src="https://user-images.githubusercontent.com/100880136/158886493-8bfd7fa9-f743-429f-af8d-e997a1111254.png" height="500">
 
 <h3>These are the reasons I made it: </h3>
 <ul>
@@ -15,11 +14,15 @@ This is my knitting meme. I made it because I enjoy the galaxy brain meme format
   </ul>
 
 <h3> Here are some examples of typical knitting memes </h3> 
-
+<p float="left">
+  <img src="http://3.bp.blogspot.com/-aEhCe-63vnQ/UeqItS_KzuI/AAAAAAAAKkI/8xgq6wUGX4w/s1600/i+knit+lace.jpg" width="200"> 
+  <img src="http://www.knittingfree.com/wp-content/uploads/2014/10/stitch-markers-meme.jpg" width="200"> 
+  <img src="https://i.pinimg.com/736x/f2/21/23/f2212391b8a01ec0b9fd93cf38d2d076.jpg" width="200">
+</p>
 
 <h3>This is the code I used to create it: </h3>
 <ol> 
-<li>*Creating and naming the text images:* 
+  <li> <i>Creating and naming the text images:</i> 
 
 garter_text <- image_blank(width = 500, height = 500, color = "#000000") %>% image_annotate(text = "knitting in garter \nstitch because it's the \neasiest stitch and \nthe first one \nyou learned", color = "#FFFFFF", size = 50, font = "Calibri", gravity = "center") 
 
@@ -30,7 +33,7 @@ all_text <- image_blank(width = 500, height = 500, color = "#000000") %>% image_
 fancy_text <- image_blank(width = 500, height = 500, color = "#000000") %>% image_annotate(text = "knitting exclusively \nin colourwork \ndiamond brocade to \nflex on the \nknitting circle", color = "#FFFFFF", size = 50, font = "Calibri", gravity = "center") </li>
 
 
-<li>*Reading in the galaxy brain images:* 
+<li><i>Reading in the galaxy brain images:</i> 
 
 brain_1 <- image_read("http://epilepsyu.com/wp-content/uploads/2015/09/small-brain.jpg") %>% image_scale(500) 
 
@@ -41,7 +44,7 @@ brain_3 <- image_read("https://secretlabinstitute.files.wordpress.com/2021/02/ga
 brain_4 <- image_read("https://i1.wp.com/lucloi.vn/wp-content/uploads/2020/03/6e8734dfe00c1b1d-1024x512-1.jpg?resize=1024%2C512&ssl=1") %>% image_scale(500) </li>
 
 
-<li>*Making the rows:* 
+<li><i>Making the rows:</i>
 
 row_1 <- image_append(c(garter_text, brain_1))
 
@@ -52,6 +55,6 @@ row_3 <- image_append(c(all_text, brain_3))
 row_4 <- image_append(c(fancy_text, brain_4)) </li>
 
 
-<li>*Stacking the rows:* 
+<li><i>Stacking the rows:</i> 
 
 full_meme -> image_append(c(row_1, row_2, row_3, row_4), stack = TRUE) %>% image_scale(750) </li>
