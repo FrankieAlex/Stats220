@@ -1,8 +1,8 @@
 This is my knitting meme. I made it because I enjoy the galaxy brain meme format and I'm sad that there aren't that many knitting memes out there. Its height is screwy because I couldn't figure out how to fix that in R but the energy is there. 
 
-This is the code I used to create it: 
+# This is the code I used to create it: 
 
-Creating and naming the text images: 
+*Creating and naming the text images:* 
 
 garter_text <- image_blank(width = 500, height = 500, color = "#000000") %>% image_annotate(text = "knitting in garter \nstitch because it's the \neasiest stitch and \nthe first one \nyou learned", color = "#FFFFFF", size = 50, font = "Calibri", gravity = "center") 
 
@@ -13,7 +13,7 @@ all_text <- image_blank(width = 500, height = 500, color = "#000000") %>% image_
 fancy_text <- image_blank(width = 500, height = 500, color = "#000000") %>% image_annotate(text = "knitting exclusively \nin colourwork \ndiamond brocade to \nflex on the \nknitting circle", color = "#FFFFFF", size = 50, font = "Calibri", gravity = "center") 
 
 
-Reading in the galaxy brain images: 
+*Reading in the galaxy brain images:* 
 
 brain_1 <- image_read("http://epilepsyu.com/wp-content/uploads/2015/09/small-brain.jpg") %>% image_scale(500) 
 
@@ -24,7 +24,7 @@ brain_3 <- image_read("https://secretlabinstitute.files.wordpress.com/2021/02/ga
 brain_4 <- image_read("https://i1.wp.com/lucloi.vn/wp-content/uploads/2020/03/6e8734dfe00c1b1d-1024x512-1.jpg?resize=1024%2C512&ssl=1") %>% image_scale(500) 
 
 
-Making the rows: 
+*Making the rows:* 
 
 row_1 <- image_append(c(garter_text, brain_1))
 
@@ -35,6 +35,6 @@ row_3 <- image_append(c(all_text, brain_3))
 row_4 <- image_append(c(fancy_text, brain_4))
 
 
-Stacking the rows:  
+*Stacking the rows:* 
 
 full_meme -> image_append(c(row_1, row_2, row_3, row_4), stack = TRUE) %>% image_scale(750) 
