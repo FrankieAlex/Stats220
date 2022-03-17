@@ -1,0 +1,1 @@
+This is my knitting meme. I made it because I enjoy the galaxy brain meme format and I'm sad that there aren't that many knitting memes out there. Its height is screwy because I couldn't figure out how to fix that in R but the energy is there. 
