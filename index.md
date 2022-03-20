@@ -25,37 +25,37 @@ This is my knitting meme. <b>Enjoy!</b>
 <ol> 
   <li> <i>Creating and naming the text images:</i> 
 
-garter_text <- image_blank(width = 500, height = 500, color = "#000000") %>% image_annotate(text = "knitting in garter \nstitch because it's the \neasiest stitch and \nthe first one \nyou learned", color = "#FFFFFF", size = 50, font = "Calibri", gravity = "center") 
+<code>garter_text <- image_blank(width = 500, height = 500, color = "#000000") %>% image_annotate(text = "knitting in garter \nstitch because it's the \neasiest stitch and \nthe first one \nyou learned", color = "#FFFFFF", size = 50, font = "Calibri", gravity = "center") </code>
 
-stock_text <- image_blank(width = 500, height = 500, color = "#000000") %>% image_annotate(text = "knitting in stockinette \nstitch because it 'lies flat' \nand is the most \ncommon/popular stitch", color = "#FFFFFF", size = 50, font = "Calibri", gravity = "center") 
+<code>stock_text <- image_blank(width = 500, height = 500, color = "#000000") %>% image_annotate(text = "knitting in stockinette \nstitch because it 'lies flat' \nand is the most \ncommon/popular stitch", color = "#FFFFFF", size = 50, font = "Calibri", gravity = "center") </code>
 
-all_text <- image_blank(width = 500, height = 500, color = "#000000") %>% image_annotate(text = "knitting in whatever \nstitch works best \nfor your current \nproject because knitting \nis a diverse art \nand every stitch \nhas its place somewhere", color = "#FFFFFF", size = 50, font = "Calibri", gravity = "center") 
+<code>all_text <- image_blank(width = 500, height = 500, color = "#000000") %>% image_annotate(text = "knitting in whatever \nstitch works best \nfor your current \nproject because knitting \nis a diverse art \nand every stitch \nhas its place somewhere", color = "#FFFFFF", size = 50, font = "Calibri", gravity = "center") </code>
 
-fancy_text <- image_blank(width = 500, height = 500, color = "#000000") %>% image_annotate(text = "knitting exclusively \nin colourwork \ndiamond brocade to \nflex on the \nknitting circle", color = "#FFFFFF", size = 50, font = "Calibri", gravity = "center") </li>
+<code>fancy_text <- image_blank(width = 500, height = 500, color = "#000000") %>% image_annotate(text = "knitting exclusively \nin colourwork \ndiamond brocade to \nflex on the \nknitting circle", color = "#FFFFFF", size = 50, font = "Calibri", gravity = "center") </code> </li>
 
 
 <li><i>Reading in the galaxy brain images:</i> 
 
-brain_1 <- image_read("http://epilepsyu.com/wp-content/uploads/2015/09/small-brain.jpg") %>% image_scale(500) 
+<code>brain_1 <- image_read("http://epilepsyu.com/wp-content/uploads/2015/09/small-brain.jpg") %>% image_scale(500) </code>
 
-brain_2 <- image_read("https://i.kym-cdn.com/photos/images/original/001/563/180/493.jpg") %>% image_scale(500) 
+<code>brain_2 <- image_read("https://i.kym-cdn.com/photos/images/original/001/563/180/493.jpg") %>% image_scale(500) </code>
 
-brain_3 <- image_read("https://secretlabinstitute.files.wordpress.com/2021/02/galaxy-brain-m-stage-3.png?w=1200") %>% image_scale(500) 
+<code>brain_3 <- image_read("https://secretlabinstitute.files.wordpress.com/2021/02/galaxy-brain-m-stage-3.png?w=1200") %>% image_scale(500) </code>
 
-brain_4 <- image_read("https://i1.wp.com/lucloi.vn/wp-content/uploads/2020/03/6e8734dfe00c1b1d-1024x512-1.jpg?resize=1024%2C512&ssl=1") %>% image_scale(500) </li>
+<code>brain_4 <- image_read("https://i1.wp.com/lucloi.vn/wp-content/uploads/2020/03/6e8734dfe00c1b1d-1024x512-1.jpg?resize=1024%2C512&ssl=1") %>% image_scale(500) </code> </li>
 
 
 <li><i>Making the rows:</i>
 
-row_1 <- image_append(c(garter_text, brain_1))
+<code>row_1 <- image_append(c(garter_text, brain_1))</code>
 
-row_2 <- image_append(c(stock_text, brain_2))
+<code>row_2 <- image_append(c(stock_text, brain_2))</code>
 
-row_3 <- image_append(c(all_text, brain_3))
+<code>row_3 <- image_append(c(all_text, brain_3))</code>
 
-row_4 <- image_append(c(fancy_text, brain_4)) </li>
+<code>row_4 <- image_append(c(fancy_text, brain_4))</code> </li>
 
 
 <li><i>Stacking the rows:</i> 
 
-full_meme -> image_append(c(row_1, row_2, row_3, row_4), stack = TRUE) %>% image_scale(750) </li>
+<code>full_meme -> image_append(c(row_1, row_2, row_3, row_4), stack = TRUE) %>% image_scale(750) </code></li>
